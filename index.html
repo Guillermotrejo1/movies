@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/6c67cc85df.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <figure>
+        <img
+          class="logo"
+          src="https://images-platform.99static.com//13INasZ559KHR9tSUtzPHmF0xac=/96x0:1040x943/fit-in/500x500/99designs-contests-attachments/138/138103/attachment_138103117"
+          alt=""
+        />
+      </figure>
+      <ul class="nav__list">
+        <li class="nav__links">
+          <a class="nav__link" href="">Home</a>
+        </li>
+        <li class="nav__links">
+          <a class="nav__link" href="">Popular</a>
+        </li>
+        <li class="nav__links">
+          <a class="nav__link" href="">Browse</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="row">
+            <div class="header__description">
+                <h1>High Quality movies for when you just want to nerd out!</h1>
+            </div>
+            <form action="" onsubmit="browsingMovies(event)">
+                <input class="form__search" type="text" placeholder="Search" name="search" required></input>
+                <button class="form__btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          <div class="movie-list">
+            <div class="movies">
+              <div class="movie-card">
+                <div class="movie-card__container">
+                  <figure class="movie__img--wrapper">
+                    <img
+                      class="movie__img"
+                      src="https://m.media-amazon.com/images/M/MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_SX300.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <h3 class="movie__title">Movie Title:</h3>
+                  <p><b>Release Date:</b> 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
