@@ -19,9 +19,6 @@ h1{
     text-align: center;
 }
 
-.nav__links{
-    padding-right: 12px;
-}
 
 
 /* NAVIGATION */
@@ -46,6 +43,15 @@ nav {
     display: flex;
 }
 
+.nav__links{
+    padding-right: 12px;
+}
+
+.nav__link{
+    font-size: 24px;
+    font-weight: bold;
+    color: #242424;
+}
 
 
 
