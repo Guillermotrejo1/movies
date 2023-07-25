@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js" defer></script>
+    <script src="browse.js" defer></script>
   </head>
   <body>
     <nav>
@@ -36,7 +37,7 @@
       <h1 class="header__title">
         High Quality movies for when you just want to nerd out!
       </h1>
-      <form action="" onsubmit="landing__browse(event)">
+      <form action="" onsubmit="browsingMovies(event)">
         <input
           class="form__search"
           type="text"
@@ -49,7 +50,7 @@
         </button>
       </form>
       <h2 class="header__feature">
-        <span class="text__color">FEATURED:</span>
+        <span class="featured">FEATURED:</span>
       </h2>
       <div class="movie__list">
         <div class="movie">
