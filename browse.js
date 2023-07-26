@@ -3,6 +3,7 @@ const movieListEl = document.querySelector('.movie__list');
 const searchKey = localStorage.getItem("key");
 
 async function main(search){
+	document.body.classlist += (" movies__loading")
 	const movies = await fetch(`https://www.omdbapi.com/?apikey=f5504bbb&s=${search}&plot=full`);
 	const moviesData = await movies.json();
 	console.log(moviesData.Search)
@@ -16,14 +17,14 @@ async function main(search){
 	else {
 		movieListEl.innerHTML = moviesData.Search.slice(0,8).map((movie) => movieHTML(movie)).join("");
 	}
-
+	document.body.classlist.remove("movies__loading")
 }
 
-function browse(event){
-	event.preventDefault();
-	const keyword = event.target.search.value;
-	main(keyword);
-}
+// function browse(event){
+// 	event.preventDefault();
+// 	const keyword = event.target.search.value;
+// 	main(keyword);
+// }
 
 function movieHTML(movie) {
 	return `

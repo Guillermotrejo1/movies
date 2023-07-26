@@ -155,6 +155,38 @@ form {
 }
 
 
+.movies__loading{
+	position: absolute;
+	top: 700px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 60px;
+	color: blue;
+}
+
+.movies__loading--spinner{
+	display: none !important;
+}
+
+.movies__loading .movies__loading--spinner{
+	display: block !important;
+}
+
+.fa-spinner{
+	animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+	0%{
+		transform: rotate(0);
+	}
+	
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
 
 /* BROWSE */
 
