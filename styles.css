@@ -163,7 +163,6 @@ form {
 	justify-content: center;
 	font-size: 60px;
 	color: blue;
-	visibility: hidden;
 }
 
 .movies__loading--spinner{
