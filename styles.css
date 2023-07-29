@@ -239,7 +239,7 @@ form {
 
 @media (max-width: 480px) {
   .logo {
-    width: 100px;
+    width: 75px;
   }
 
   .header__title {
