@@ -1,5 +1,5 @@
 movieListEl = document.querySelector(".movie__list");
-formsearch = document.querySelector(".form__search")
+formSearch = document.querySelector(".form__search")
 
 
 async function renderMovies(e) {
