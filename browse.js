@@ -1,6 +1,7 @@
 
 const movieListEl = document.querySelector('.movie__list');
 const searchKey = localStorage.getItem("key");
+let loadingSpinner = "movies__loading"
 
 
 async function main(search){

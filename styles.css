@@ -149,12 +149,6 @@ form {
 	width: 48px;
 }
 
-
-.featured{
-    
-}
-
-
 .movies__loading{
 	position: absolute;
 	top: 700px;
@@ -165,11 +159,13 @@ form {
 	color: blue;
 }
 
-.movies__loading--spinner{
+
+
+.movies__loading{
 	display: none !important;
 }
 
-.movies__loading .movies__loading--spinner{
+.loading .movies__loading{
 	display: block !important;
 }
 
