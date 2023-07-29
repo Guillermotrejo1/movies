@@ -53,6 +53,16 @@ nav {
     color: #242424;
 }
 
+.nav__link--browse{
+	font-size: 24px;
+    font-weight: bold;
+    color: #242424;
+	padding: 16px;
+	border: 2px solid blue;
+	background-color: blue;
+	border-radius: 50%;
+
+}
 
 
 
@@ -206,4 +216,62 @@ form {
 	color: #fff;
 	margin-top: 12px;
 	text-align: center;
+}
+
+
+@media (max-width: 758px){
+	.nav__link{
+		display: none;
+	}
+
+	.nav__link--browse{
+		display: block;
+	}
+
+	.header__title{
+		font-size: 40px;
+	}
+
+	.movie {
+		width: calc(100%/2);
+		align-items: center;
+	}
+
+	.movie__img--wrapper {
+		width: 200px;
+		height: 300px;
+	}
+
+	.movie-list {
+		padding: 0 48px;
+	}
+
+}
+
+
+@media (max-width: 480px) {
+
+	.header__title {
+		font-size: 32px;
+	}
+
+	.movie__img--wrapper {
+		width: 150px;
+		height: 250px;
+	}
+
+	.movie-list {
+		padding: 0 40px;
+	}
+
+	.movie__title {
+		font-size: 14px;
+		max-width: 150px;
+		text-align: center;
+	}
+
+	.movie__year {
+		font: 10px;
+	}
+
 }

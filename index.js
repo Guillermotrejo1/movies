@@ -6,7 +6,7 @@ async function renderMovies(e) {
   e.preventDefault();
   console.log(document.body.classList)
   document.body.classList.toggle("loading")
-  const movies = await fetch(`https://www.omdbapi.com/?apikey=11142a25&s=${formSearch.value}`);
+  const movies = await fetch(`https://www.omdbapi.com/?apikey=11142a25&s=${formSearch.value}&plot=ful`);
   const moviesData = await movies.json();
   document.body.classList.toggle("loading");
   console.log(moviesData.Search);
