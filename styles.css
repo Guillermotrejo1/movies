@@ -205,6 +205,15 @@ form {
   text-align: center;
 }
 
+footer {
+    height: 70px;
+    background-color: navy;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 758px) {
   .logo {
     width: 100px;
