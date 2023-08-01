@@ -36,4 +36,4 @@ function moviesHTML(movie) {
 
 
 
-renderMovies();
+// renderMovies();
