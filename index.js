@@ -13,7 +13,7 @@ async function renderMovies(e) {
     console.log(moviesData.Search);
     movieListEl.innerHTML = moviesData.Search.slice(0,6).map((movie) => moviesHTML(movie)).join("");
 } catch (error) {
-    console.log("this didnt work")
+    console.log("error")
 }
 }
 
