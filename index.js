@@ -1,6 +1,7 @@
 movieListEl = document.querySelector(".movie__list");
 formSearch = document.querySelector(".form__search")
-
+const testDiv = document.querySelector(".movie__block");
+let search = [''] // assuming failed search, empty array
 
 async function renderMovies(e) {
   try{
@@ -17,16 +18,27 @@ async function renderMovies(e) {
 }
 }
 
-function errorHTML (Search,Error) {
-  if(Search === null){
-  return `<div class="empty">
+
+function outputFunction() {
+
+  if (search.length < 1) {
+    return (testDiv.innerHTML = errorHTML()); //can be a function that gets called
+  } else {
+    return (testDiv.innerHTML = renderMovies());
+//can be a function
+  }
+}
+
+outputFunction();
+
+function errorHTML() {
+  return `<div class="movie__block">
   <figure class="empty__img--wrapper">
       <img class="empty__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq3ytoVkdDuKo_iKa-pK_hWDXo37WACBjzcg&usqp=CAU" alt="" class="empty__img">
   </figure>
-  <h1 class="help__txt">Search for movies ex. Title, Keywords</h1>
-  <h2 class="search__error--txt">${Search,Error}!</h2>
+  <h1 class="help__txt">Search for Movies ex. Title, Keywords</h1>
+  <h2 class="search__error--txt">Movie not found!</h2>
 </div>`
-}
 }
 
 

@@ -183,9 +183,9 @@ form {
   }
 }
 
-/* EMPTY */
+/* BLOCK */
 
-.empty{
+.movie__block{
     display: flex;
     justify-content: center;
     align-items: center;
