@@ -55,7 +55,7 @@ formSearch = document.querySelector(".form__search");
 testDiv = document.querySelector(".movie__block");
 
 async function renderMovies(event) {
-  event.preventDefault();
+  event.preventDefault(event);
   document.body.classList.toggle("loading");
   const data = await fetch(
     `https://www.omdbapi.com/?apikey=11142a25&s=${formSearch.value}`
